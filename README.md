@@ -29,3 +29,25 @@ then run `GNU Stow` to create symlinks
 ```
 $ stow .
 ```
+
+## Update
+
+Pull new changes from git repository
+```
+$ cd ~/dotfiles
+$ git pull
+```
+
+run `GNU Stow` again
+
+```
+$ stow .
+```
+
+> [!IMPORTANT]  
+> If case of conflicts run 
+> ```
+> $ stow --adopt .
+> ```
+> which will copy inflicted files into repository, then thoses can be  cleaned up or reverted
+> or remove conficted files and start `GNU Stow` again
